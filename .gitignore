@@ -1,0 +1,4 @@
+.zig-cache
+db
+node_modules
+zig-out/bin

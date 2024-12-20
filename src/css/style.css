@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Changed from center to flex-start */
+    min-height: 100vh; /* Changed from height to min-height */
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+}
+h1 {
+    color: #e0e0e0; /* Light text color */
+    font-size: 2.5em;
+    margin: 10px 0; /* Added margin to top and bottom */
+    text-align: center;
+}
+h2 {
+    color: #e0e0e0; /* Light text color */
+    text-align: center;
+}
+
+
+.content-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    color: white; /* Ensure text is readable */
+    border-radius: 10px; /* Rounded corners for aesthetic */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Add a subtle shadow */
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px 0;
+}
+
+/* Styles for the form */
+form {
+    background-color: #1e1e1e; /* Dark background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    width: 100%;
+    max-width: 400px;
+}
+form label {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #333;
+    color: #e0e0e0;
+}
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2196F3; /* Blue button */
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+form button:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto; /* Center table */
+    text-align: center; /* Center text in cells */
+    max-width: 800px; /* Maximum table width */
+    width: 100%; /* Optional: Set a percentage width */
+}
+
+th{
+    text-align: center;
+}
+th, td {
+    border: 1px solid white; /* Add border around each cell */
+    padding: 8px; /* Add padding for readability */
+}
